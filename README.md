@@ -8,16 +8,18 @@ To build this app locally use:
 ```bash
 docker-compose build
 ```
-Then you can start it with:
-```bash
-docker-compose up
-```
+
 Data Import
 ```bash
 docker-compose run --rm web python manage.py import_data data_storage/stores.json
 ```
 File should be in a json format.
 It will load the list of cities, and fetch the coordinates for all of them from [postcode.io](https://postcodes.io/)
+
+Then you can start it with:
+```bash
+docker-compose up
+```
 
 ## Usage
 
